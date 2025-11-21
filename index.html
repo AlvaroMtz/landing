@@ -12,30 +12,37 @@
         extend: {
           colors: {
             brand: {
-              500: '#4f8bff'
+              400: '#4ade80', // verde suave
+              500: '#22c55e', // verde principal
+              600: '#16a34a'
             }
           }
         }
       }
     }
   </script>
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  </style>    
 </head>
-<body class="bg-slate-950 text-slate-50 antialiased">
-  <!-- Fondos -->
+<body class="bg-black text-slate-50 antialiased">
+  <!-- Fondos suaves en verde -->
   <div class="pointer-events-none fixed inset-0 -z-10">
-    <div class="absolute -top-32 -left-20 w-[32rem] h-[32rem] bg-brand-500/30 blur-3xl rounded-full"></div>
-    <div class="absolute top-20 right-0 w-[28rem] h-[28rem] bg-purple-500/30 blur-3xl rounded-full"></div>
-    <div class="absolute bottom-[-12rem] left-1/2 -translate-x-1/2 w-[40rem] h-[40rem] bg-emerald-400/10 blur-3xl rounded-full"></div>
+    <div class="absolute -top-32 -left-24 w-[30rem] h-[30rem] bg-brand-500/18 blur-3xl rounded-full"></div>
+    <div class="absolute top-40 right-0 w-[26rem] h-[26rem] bg-brand-400/10 blur-3xl rounded-full"></div>
+    <div class="absolute bottom-[-14rem] left-1/2 -translate-x-1/2 w-[38rem] h-[38rem] bg-brand-500/8 blur-3xl rounded-full"></div>
   </div>
 
   <!-- NAV -->
-  <header class="sticky top-0 z-20 border-b border-white/5 bg-slate-950/70 backdrop-blur-xl">
+  <header class="sticky top-0 z-20 border-b border-white/5 bg-black/80 backdrop-blur-xl">
     <div class="max-w-6xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3">
-        <!-- Pon aquí tu logo -->
+        <!-- Logo -->
         <div class="w-10 h-10">
           <img
-            src="logo-gembres.svg"  <!-- cambia esto a la ruta de tu logo -->
+            src="logo-gembres.svg"
             alt="Logo Gembres"
             class="w-10 h-10 object-contain"
           />
@@ -46,14 +53,14 @@
         </div>
       </a>
       <nav class="hidden md:flex items-center gap-7 text-sm text-slate-300">
-        <a href="#servicios" class="hover:text-brand-500">Servicios</a>
-        <a href="#proceso" class="hover:text-brand-500">Proceso</a>
-        <a href="#casos" class="hover:text-brand-500">Casos</a>
-        <a href="#contacto" class="hover:text-brand-500">Contacto</a>
+        <a href="#servicios" class="hover:text-brand-400">Servicios</a>
+        <a href="#proceso" class="hover:text-brand-400">Proceso</a>
+        <a href="#casos" class="hover:text-brand-400">Casos</a>
+        <a href="#contacto" class="hover:text-brand-400">Contacto</a>
       </nav>
       <a
         href="#contacto"
-        class="hidden md:inline-flex rounded-full bg-gradient-to-r from-brand-500 to-emerald-400 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-lg hover:brightness-110"
+        class="hidden md:inline-flex rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-black shadow-lg shadow-brand-500/30 hover:bg-brand-400"
       >
         Empezar proyecto
       </a>
@@ -61,32 +68,32 @@
   </header>
 
   <main>
-    <!-- HERO (alto) -->
+    <!-- HERO (muy alto) -->
     <section class="relative min-h-screen flex items-center">
       <div class="max-w-6xl mx-auto px-6 lg:px-8 py-32 grid lg:grid-cols-[1.1fr,1fr] gap-14 items-center">
         <!-- Texto -->
         <div>
           <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-[12px] text-slate-200 mb-6">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse"></span>
             IA en producción, no solo en presentaciones
           </div>
 
           <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-tight mb-5">
             Transformamos tus procesos
-            <span class="bg-gradient-to-r from-brand-500 via-emerald-300 to-purple-300 bg-clip-text text-transparent">
+            <span class="bg-gradient-to-r from-slate-50 via-brand-400 to-slate-50 bg-clip-text text-transparent">
               con IA aplicada
             </span>.
           </h1>
 
           <p class="text-base md:text-lg text-slate-300/90 mb-8 max-w-xl leading-relaxed">
             Diseñamos, construimos e integramos soluciones con IA y LLMs que se conectan a tus sistemas,
-            respetan tus datos y mueven tus métricas: menos tareas manuales, más foco en lo importante.
+            respetan tus datos y mueven tus métricas: menos trabajo manual, más foco en lo importante.
           </p>
 
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-8">
             <a
               href="#contacto"
-              class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-500 to-emerald-400 px-6 py-3 text-base font-semibold text-slate-950 shadow-lg hover:brightness-110"
+              class="inline-flex items-center justify-center rounded-full bg-brand-500 px-6 py-3 text-base font-semibold text-black shadow-lg shadow-brand-500/30 hover:bg-brand-400"
             >
               Agenda una llamada
             </a>
@@ -105,11 +112,11 @@
               Integración con APIs, CRMs y BBDD
             </span>
             <span class="inline-flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-              De idea a deploy en semanas
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-500"></span>
+              De idea a producción en semanas
             </span>
             <span class="inline-flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-slate-500"></span>
               Métricas claras de impacto
             </span>
           </div>
@@ -117,45 +124,45 @@
 
         <!-- Tarjeta -->
         <div class="relative mt-10 lg:mt-0">
-          <div class="absolute inset-0 -top-10 -right-6 rounded-3xl bg-gradient-to-br from-brand-500/25 to-purple-500/20 blur-2xl"></div>
-          <div class="relative rounded-3xl border border-white/10 bg-slate-950/80 p-7 md:p-8 shadow-[0_0_80px_rgba(15,23,42,0.9)]">
+          <div class="absolute inset-0 -top-10 -right-6 rounded-3xl bg-brand-500/10 blur-2xl"></div>
+          <div class="relative rounded-3xl border border-white/10 bg-neutral-950/90 p-7 md:p-8 shadow-[0_0_80px_rgba(0,0,0,0.9)]">
             <div class="flex items-center justify-between mb-6">
               <div>
-                <p class="text-[12px] uppercase tracking-[0.18em] text-slate-400">Panel de impacto</p>
+                <p class="text-[12px] uppercase tracking-[0.18em] text-slate-500">Panel de impacto</p>
                 <p class="text-sm text-slate-300">Ejemplo de resultados tras integrar IA</p>
               </div>
               <div class="flex items-center gap-1">
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                <span class="w-1.5 h-1.5 rounded-full bg-amber-300"></span>
-                <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-500"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-600"></span>
               </div>
             </div>
 
             <div class="grid grid-cols-3 gap-4 text-sm mb-6">
-              <div class="rounded-2xl bg-slate-900/60 border border-white/5 p-4">
+              <div class="rounded-2xl bg-neutral-900/90 border border-white/5 p-4">
                 <p class="text-xs text-slate-400 mb-1">Tiempo por tarea</p>
-                <p class="text-2xl font-bold text-emerald-300">-43%</p>
+                <p class="text-2xl font-bold text-brand-400">-43%</p>
                 <p class="text-[11px] text-slate-500 mt-1">Equipos internos</p>
               </div>
-              <div class="rounded-2xl bg-slate-900/60 border border-white/5 p-4">
+              <div class="rounded-2xl bg-neutral-900/90 border border-white/5 p-4">
                 <p class="text-xs text-slate-400 mb-1">Tickets resueltos</p>
-                <p class="text-2xl font-bold text-brand-200">+38%</p>
+                <p class="text-2xl font-bold text-slate-50">+38%</p>
                 <p class="text-[11px] text-slate-500 mt-1">Soporte al cliente</p>
               </div>
-              <div class="rounded-2xl bg-slate-900/60 border border-white/5 p-4">
+              <div class="rounded-2xl bg-neutral-900/90 border border-white/5 p-4">
                 <p class="text-xs text-slate-400 mb-1">Errores repetidos</p>
-                <p class="text-2xl font-bold text-rose-300">-29%</p>
+                <p class="text-2xl font-bold text-brand-400">-29%</p>
                 <p class="text-[11px] text-slate-500 mt-1">Procesos críticos</p>
               </div>
             </div>
 
-            <div class="rounded-2xl border border-dashed border-brand-500/40 bg-gradient-to-r from-brand-500/10 to-purple-500/5 px-4 py-3 text-[12px] text-slate-200 mb-3">
+            <div class="rounded-2xl border border-dashed border-brand-500/60 bg-black/60 px-4 py-3 text-[12px] text-slate-200 mb-3">
               Antes de escribir código, acordamos qué métrica queremos mover y cómo la vamos a medir.
             </div>
 
             <p class="text-[12px] text-slate-500 leading-relaxed">
               El enfoque es siempre el mismo:
-              <span class="text-slate-300">caso de uso concreto → prototipo → integración → medición</span>.
+              <span class="text-slate-200">caso de uso concreto → prototipo → integración → medición</span>.
             </p>
           </div>
         </div>
@@ -163,7 +170,7 @@
     </section>
 
     <!-- STRIP CONTEXTO -->
-    <section class="border-t border-white/5 bg-slate-950/70">
+    <section class="border-t border-white/5 bg-black">
       <div class="max-w-6xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <p class="text-[11px] uppercase tracking-[0.2em] text-slate-500">
           Pensado para equipos de producto, ingeniería y operaciones
@@ -177,11 +184,11 @@
     </section>
 
     <!-- SERVICIOS (alto) -->
-    <section id="servicios" class="border-t border-white/5 bg-slate-950/80">
+    <section id="servicios" class=" border-t border-white/5 bg-neutral-950">
       <div class="max-w-6xl mx-auto px-6 lg:px-8 py-32">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div>
-            <p class="text-[11px] uppercase tracking-[0.2em] text-brand-500 mb-2">Servicios</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-brand-400 mb-2">Servicios</p>
             <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Lo que hacemos en Gembres</h2>
           </div>
           <p class="text-sm md:text-base text-slate-400 max-w-md">
@@ -191,8 +198,8 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 text-sm">
-          <div class="relative rounded-3xl border border-white/8 bg-gradient-to-b from-white/5 to-slate-950/80 p-6 min-h-[260px] flex flex-col">
-            <p class="text-[11px] text-slate-400 mb-1">01 · Automatización</p>
+          <div class="relative rounded-3xl border border-white/10 bg-black/80 p-6 min-h-[260px] flex flex-col">
+            <p class="text-[11px] text-slate-500 mb-1">01 · Automatización</p>
             <h3 class="font-medium mb-3 text-slate-50 text-lg">Workflows asistidos por IA</h3>
             <p class="text-slate-300/90 text-sm mb-4 flex-1">
               Clasificación de tickets, generación de respuestas, extracción de datos, resúmenes contextuales…
@@ -205,8 +212,8 @@
             </ul>
           </div>
 
-          <div class="relative rounded-3xl border border-white/8 bg-gradient-to-b from-white/5 to-slate-950/80 p-6 min-h-[260px] flex flex-col">
-            <p class="text-[11px] text-slate-400 mb-1">02 · Producto</p>
+          <div class="relative rounded-3xl border border-white/10 bg-black/80 p-6 min-h-[260px] flex flex-col">
+            <p class="text-[11px] text-slate-500 mb-1">02 · Producto</p>
             <h3 class="font-medium mb-3 text-slate-50 text-lg">IA dentro de tu app</h3>
             <p class="text-slate-300/90 text-sm mb-4 flex-1">
               Asistentes contextuales, búsqueda semántica, RAG sobre tu documentación
@@ -219,8 +226,8 @@
             </ul>
           </div>
 
-          <div class="relative rounded-3xl border border-white/8 bg-gradient-to-b from-white/5 to-slate-950/80 p-6 min-h-[260px] flex flex-col">
-            <p class="text-[11px] text-slate-400 mb-1">03 · Partner técnico</p>
+          <div class="relative rounded-3xl border border-white/10 bg-black/80 p-6 min-h-[260px] flex flex-col">
+            <p class="text-[11px] text-slate-500 mb-1">03 · Partner técnico</p>
             <h3 class="font-medium mb-3 text-slate-50 text-lg">Arquitectura & estrategia de IA</h3>
             <p class="text-slate-300/90 text-sm mb-4 flex-1">
               Nos integramos con tu equipo para elegir modelos, diseñar arquitectura, controlar costes y definir
@@ -237,11 +244,11 @@
     </section>
 
     <!-- PROCESO (alto) -->
-    <section id="proceso" class="border-t border-white/5 bg-slate-950">
+    <section id="proceso" class="border-t border-white/5 bg-black">
       <div class="max-w-6xl mx-auto px-6 lg:px-8 py-32">
         <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-12">
           <div>
-            <p class="text-[11px] uppercase tracking-[0.2em] text-brand-500 mb-2">Proceso</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-brand-400 mb-2">Proceso</p>
             <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Cómo pasamos de idea a producción</h2>
           </div>
           <p class="text-sm md:text-base text-slate-400 max-w-md">
@@ -250,29 +257,29 @@
         </div>
 
         <div class="grid md:grid-cols-4 gap-6 text-sm">
-          <div class="rounded-3xl border border-white/8 bg-slate-950/80 p-6 min-h-[220px] flex flex-col gap-2">
-            <p class="text-[11px] text-slate-400">Paso 01</p>
+          <div class="rounded-3xl border border-white/10 bg-neutral-950/90 p-6 min-h-[220px] flex flex-col gap-2">
+            <p class="text-[11px] text-slate-500">Paso 01</p>
             <h3 class="font-medium text-slate-50 text-base">Contexto & oportunidades</h3>
             <p class="text-slate-400 text-sm">
               Revisamos negocio, sistemas y constraints. Elegimos juntos el problema a atacar primero.
             </p>
           </div>
-          <div class="rounded-3xl border border-white/8 bg-slate-950/80 p-6 min-h-[220px] flex flex-col gap-2">
-            <p class="text-[11px] text-slate-400">Paso 02</p>
+          <div class="rounded-3xl border border-white/10 bg-neutral-950/90 p-6 min-h-[220px] flex flex-col gap-2">
+            <p class="text-[11px] text-slate-500">Paso 02</p>
             <h3 class="font-medium text-slate-50 text-base">Prototipo guiado por datos</h3>
             <p class="text-slate-400 text-sm">
               Construimos una primera versión usando datos reales siempre que sea posible.
             </p>
           </div>
-          <div class="rounded-3xl border border-white/8 bg-slate-950/80 p-6 min-h-[220px] flex flex-col gap-2">
-            <p class="text-[11px] text-slate-400">Paso 03</p>
+          <div class="rounded-3xl border border-white/10 bg-neutral-950/90 p-6 min-h-[220px] flex flex-col gap-2">
+            <p class="text-[11px] text-slate-500">Paso 03</p>
             <h3 class="font-medium text-slate-50 text-base">Integración en tu stack</h3>
             <p class="text-slate-400 text-sm">
               Conectamos con tus APIs, BBDD y herramientas, cuidando seguridad y escalabilidad.
             </p>
           </div>
-          <div class="rounded-3xl border border-white/8 bg-slate-950/80 p-6 min-h-[220px] flex flex-col gap-2">
-            <p class="text-[11px] text-slate-400">Paso 04</p>
+          <div class="rounded-3xl border border-white/10 bg-neutral-950/90 p-6 min-h-[220px] flex flex-col gap-2">
+            <p class="text-[11px] text-slate-500">Paso 04</p>
             <h3 class="font-medium text-slate-50 text-base">Métricas & ajustes</h3>
             <p class="text-slate-400 text-sm">
               Medimos impacto y decidimos si escalar, iterar o cerrar el experimento.
@@ -283,11 +290,11 @@
     </section>
 
     <!-- CASOS (alto) -->
-    <section id="casos" class="border-t border-white/5 bg-slate-950/90">
+    <section id="casos" class="border-t border-white/5 bg-neutral-950">
       <div class="max-w-6xl mx-auto px-6 lg:px-8 py-32">
         <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
           <div>
-            <p class="text-[11px] uppercase tracking-[0.2em] text-brand-500 mb-2">Casos de uso</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-brand-400 mb-2">Casos de uso</p>
             <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">Ejemplos de lo que podemos construir</h2>
           </div>
           <p class="text-sm md:text-base text-slate-400 max-w-md">
@@ -296,24 +303,24 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-8 text-sm">
-          <div class="rounded-3xl border border-white/8 bg-slate-950/80 p-6 min-h-[240px] flex flex-col">
-            <p class="text-[11px] text-emerald-300 mb-1">Asistente interno</p>
+          <div class="rounded-3xl border border-white/10 bg-black/80 p-6 min-h-[240px] flex flex-col">
+            <p class="text-[11px] text-brand-400 mb-1">Asistente interno</p>
             <h3 class="font-medium text-slate-50 mb-2 text-lg">Conocimiento de la empresa en un chat</h3>
             <p class="text-slate-400 mb-3 text-sm flex-1">
               Tu equipo pregunta en lenguaje natural y la IA responde con base en manuales, procedimientos y documentación interna.
             </p>
             <p class="text-[12px] text-slate-500">· Control por roles · Logs · Feedback loop</p>
           </div>
-          <div class="rounded-3xl border border-white/8 bg-slate-950/80 p-6 min-h-[240px] flex flex-col">
-            <p class="text-[11px] text-brand-500 mb-1">Soporte al cliente</p>
+          <div class="rounded-3xl border border-white/10 bg-black/80 p-6 min-h-[240px] flex flex-col">
+            <p class="text-[11px] text-brand-400 mb-1">Soporte al cliente</p>
             <h3 class="font-medium text-slate-50 mb-2 text-lg">Respuestas asistidas, no ciegas</h3>
             <p class="text-slate-400 mb-3 text-sm flex-1">
               La IA propone respuestas que tu equipo revisa y ajusta. Menos tiempo por ticket sin perder control.
             </p>
             <p class="text-[12px] text-slate-500">· Integración con helpdesk · Suggested replies</p>
           </div>
-          <div class="rounded-3xl border border-white/8 bg-slate-950/80 p-6 min-h-[240px] flex flex-col">
-            <p class="text-[11px] text-purple-300 mb-1">Insights de negocio</p>
+          <div class="rounded-3xl border border-white/10 bg-black/80 p-6 min-h-[240px] flex flex-col">
+            <p class="text-[11px] text-brand-400 mb-1">Insights de negocio</p>
             <h3 class="font-medium text-slate-50 mb-2 text-lg">Panel conversacional</h3>
             <p class="text-slate-400 mb-3 text-sm flex-1">
               Preguntas tipo chat sobre tu negocio (ventas, churn, tickets, etc.) y obtienes respuestas accionables.
@@ -325,11 +332,11 @@
     </section>
 
     <!-- CONTACTO / HABLEMOS (alto) -->
-    <section id="contacto" class="border-t border-white/5 bg-gradient-to-b from-slate-950 to-slate-950">
+    <section id="contacto" class="min-h-screen border-t border-white/5 bg-black">
       <div class="max-w-6xl mx-auto px-6 lg:px-8 py-32">
         <div class="grid lg:grid-cols-[1.2fr,1fr] gap-12 items-start">
           <div>
-            <p class="text-[11px] uppercase tracking-[0.2em] text-brand-500 mb-2">Hablemos</p>
+            <p class="text-[11px] uppercase tracking-[0.2em] text-brand-400 mb-2">Hablemos</p>
             <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
               Cuéntanos tu caso y vemos si tiene sentido trabajar juntos.
             </h2>
@@ -343,7 +350,7 @@
                 <label class="block mb-1 text-[11px] font-medium text-slate-200">Nombre</label>
                 <input
                   type="text"
-                  class="w-full rounded-2xl border border-white/10 bg-slate-950/80 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+                  class="w-full rounded-2xl border border-white/10 bg-neutral-950 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
                   placeholder="Tu nombre"
                 />
               </div>
@@ -351,20 +358,20 @@
                 <label class="block mb-1 text-[11px] font-medium text-slate-200">Email</label>
                 <input
                   type="email"
-                  class="w-full rounded-2xl border border-white/10 bg-slate-950/80 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+                  class="w-full rounded-2xl border border-white/10 bg-neutral-950 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
                   placeholder="tu@empresa.com"
                 />
               </div>
               <div>
                 <label class="block mb-1 text-[11px] font-medium text-slate-200">Cuéntanos brevemente tu caso</label>
                 <textarea
-                  class="w-full rounded-2xl border border-white/10 bg-slate-950/80 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-brand-500 h-32"
+                  class="w-full rounded-2xl border border-white/10 bg-neutral-950 px-3 py-2 text-sm text-slate-50 placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-brand-500 h-32"
                   placeholder="Qué hacéis, qué os gustaría automatizar o mejorar con IA, plazos aproximados..."
                 ></textarea>
               </div>
               <button
                 type="submit"
-                class="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-brand-500 to-emerald-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-brand-500/40 hover:brightness-110"
+                class="inline-flex items-center justify-center rounded-full bg-brand-500 px-6 py-3 text-sm font-semibold text-black shadow-lg shadow-brand-500/30 hover:bg-brand-400"
               >
                 Enviar mensaje
               </button>
@@ -374,7 +381,7 @@
             </form>
           </div>
 
-          <div class="rounded-3xl border border-white/10 bg-slate-950/80 p-6 text-xs text-slate-300 space-y-3">
+          <div class="rounded-3xl border border-white/10 bg-neutral-950/90 p-6 text-xs text-slate-300 space-y-3">
             <h3 class="text-sm font-medium text-slate-50 mb-1">Qué puedes esperar</h3>
             <p>· Revisamos tu mensaje y valoramos si realmente podemos aportar valor.</p>
             <p>· Si vemos encaje, proponemos una llamada de 30–45 minutos.</p>
@@ -389,7 +396,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-t border-white/5 bg-slate-950">
+  <footer class="border-t border-white/5 bg-black">
     <div class="max-w-6xl mx-auto px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
       <span>© <span id="year"></span> Gembres. IA aplicada a producto y procesos.</span>
       <span>Construido desde la ingeniería, con foco en resultados.</span>
@@ -401,3 +408,4 @@
   </script>
 </body>
 </html>
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  width="256"
+  height="256"
+  viewBox="0 0 256 256"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Círculo de fondo -->
+  <circle cx="128" cy="128" r="112" fill="#000000" />
+
+  <!-- Montañas (líneas blancas) -->
+  <g
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <!-- Silueta principal de montañas -->
+    <path d="
+      M 32 176
+      L 84 104
+      L 112 140
+      L 144 88
+      L 192 168
+    " />
+
+    <!-- Detalles internos (nieve/aristas) -->
+    <path d="
+      M 84 104
+      L 98 122
+      L 112 108
+    " />
+
+    <path d="
+      M 144 88
+      L 156 110
+      L 168 100
+    " />
+
+    <path d="
+      M 60 154
+      L 76 134
+    " />
+
+    <path d="
+      M 124 154
+      L 140 132
+    " />
+  </g>
+</svg>

@@ -2,28 +2,30 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Gembres – Agencia de IA aplicada</title>
+  <title>Gembres – IA aplicada a tu producto</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Gembres: agencia especializada en soluciones de IA y LLMs que llegan a producción." />
+  <meta name="description" content="Gembres: agencia especializada en integrar IA y LLMs en productos y procesos, con foco en producción." />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-50">
-  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-2">
-        <div class="w-8 h-8 rounded-xl bg-emerald-500 flex items-center justify-center font-bold text-slate-900">
+<body class="bg-slate-50 text-slate-900">
+  <!-- NAV -->
+  <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-2xl bg-gradient-to-tr from-emerald-500 to-sky-500 flex items-center justify-center text-xs font-semibold text-white">
           G
         </div>
-        <span class="font-semibold tracking-tight">Gembres</span>
-      </div>
-      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
-        <a href="#servicios" class="hover:text-emerald-400">Servicios</a>
-        <a href="#proceso" class="hover:text-emerald-400">Proceso</a>
-        <a href="#casos" class="hover:text-emerald-400">Ejemplos</a>
-        <a href="#sobre" class="hover:text-emerald-400">Sobre Gembres</a>
-        <a href="#faq" class="hover:text-emerald-400">FAQ</a>
+        <span class="font-semibold tracking-tight text-sm">Gembres</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-xs text-slate-600">
+        <a href="#servicios" class="hover:text-slate-900">Servicios</a>
+        <a href="#proceso" class="hover:text-slate-900">Proceso</a>
+        <a href="#sobre" class="hover:text-slate-900">Sobre nosotros</a>
       </nav>
-      <a href="#contacto" class="hidden md:inline-flex px-4 py-2 rounded-full bg-emerald-500 text-slate-900 font-medium text-sm hover:bg-emerald-400">
+      <a
+        href="#contacto"
+        class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-slate-50 text-xs font-medium hover:bg-slate-800"
+      >
         Agenda una llamada
       </a>
     </div>
@@ -31,272 +33,239 @@
 
   <main>
     <!-- HERO -->
-    <section class="max-w-6xl mx-auto px-4 pt-16 pb-20">
-      <div class="grid md:grid-cols-2 gap-10 items-center">
+    <section class="max-w-5xl mx-auto px-4 pt-16 pb-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <span class="inline-flex items-center px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs font-medium text-emerald-300 mb-4">
-            IA en producción, no solo en la demo
-          </span>
-          <h1 class="text-3xl md:text-5xl font-semibold tracking-tight mb-4">
-            IA que no se queda en la demo.
+          <div class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-[11px] text-slate-600 mb-4">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+            IA en producción, no solo prototipos
+          </div>
+          <h1 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
+            Construimos experiencias con IA que encajan en tu producto.
           </h1>
-          <p class="text-slate-300 mb-6 text-sm md:text-base leading-relaxed">
-            En <span class="font-semibold">Gembres</span> diseñamos, construimos e integramos soluciones con IA y LLMs
-            que encajan con tu negocio, tus sistemas y tus métricas. Sin humo, con entregables.
+          <p class="text-sm md:text-base text-slate-600 mb-6 max-w-md">
+            Gembres te ayuda a pasar de la idea a una integración real de IA: asistente, automatización o
+            panel de insights, conectado a tus sistemas y medido con métricas claras.
           </p>
-          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-6">
-            <a href="#contacto" class="inline-flex px-5 py-3 rounded-full bg-emerald-500 text-slate-900 font-medium text-sm hover:bg-emerald-400">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-5">
+            <a
+              href="#contacto"
+              class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-slate-900 text-slate-50 text-sm font-medium hover:bg-slate-800"
+            >
               Agenda una llamada
             </a>
-            <p class="text-xs text-slate-400 max-w-xs">
-              Cuéntanos tu caso y en 30&nbsp;minutos te proponemos un plan concreto.
-            </p>
+            <button
+              type="button"
+              class="inline-flex items-center justify-center px-4 py-2 rounded-full text-xs text-slate-700 border border-slate-200 bg-white hover:border-slate-300"
+            >
+              Ver qué podemos hacer
+            </button>
           </div>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
-            <div class="flex items-start gap-2">
-              <span class="mt-0.5">✅</span>
-              <span>Integraciones con tus sistemas actuales</span>
-            </div>
-            <div class="flex items-start gap-2">
-              <span class="mt-0.5">✅</span>
-              <span>Foco en producción, no en PoCs eternos</span>
-            </div>
-            <div class="flex items-start gap-2">
-              <span class="mt-0.5">✅</span>
-              <span>Métricas claras de impacto</span>
-            </div>
-          </div>
-        </div>
-        <div class="relative">
-          <div class="absolute -top-6 -right-6 w-32 h-32 bg-emerald-500/20 rounded-full blur-3xl"></div>
-          <div class="relative border border-slate-800 rounded-2xl bg-slate-900/50 p-5 shadow-xl">
-            <h2 class="text-sm font-semibold mb-3 text-slate-100">
-              Ejemplo de impacto
-            </h2>
-            <div class="space-y-3 text-xs text-slate-300">
-              <div class="flex justify-between">
-                <span>Tiempo por ticket</span>
-                <span class="font-mono">-45%</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Tareas manuales</span>
-                <span class="font-mono">-60%</span>
-              </div>
-              <div class="flex justify-between">
-                <span>Errores recurrentes</span>
-                <span class="font-mono">-30%</span>
-              </div>
-            </div>
-            <p class="mt-4 text-[11px] text-slate-500">
-              Ejemplo estimado de lo que conseguimos combinando automatización con IA, buen diseño de prompts y una integración sólida.
-            </p>
+          <div class="flex flex-wrap gap-4 text-[11px] text-slate-500">
+            <span class="inline-flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              Integración con tus APIs y datos
+            </span>
+            <span class="inline-flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
+              Foco en tiempo ahorrado y calidad
+            </span>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- PROBLEMAS -->
-    <section class="border-t border-slate-800 bg-slate-950/60">
-      <div class="max-w-6xl mx-auto px-4 py-14">
-        <div class="grid md:grid-cols-2 gap-8">
-          <div>
-            <h2 class="text-2xl font-semibold mb-3">
-              Cuando la IA te llama la atención, pero tu negocio necesita resultados.
-            </h2>
-            <p class="text-sm text-slate-300">
-              Muchas empresas ya han probado “algo con IA”, pero pocas lo han llevado a producción.
-              Ahí es donde entra Gembres.
+        <div class="relative">
+          <div class="absolute -top-10 -right-10 w-40 h-40 bg-emerald-300/30 blur-3xl rounded-full pointer-events-none"></div>
+          <div class="relative rounded-2xl border border-slate-200 bg-white shadow-sm p-5 space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-medium text-slate-700">Panel de impacto</span>
+              <span class="text-[11px] text-slate-400">Ejemplo</span>
+            </div>
+            <div class="grid grid-cols-3 gap-3 text-xs">
+              <div class="rounded-xl bg-slate-50 p-3">
+                <p class="text-[11px] text-slate-500 mb-1">Tiempo por tarea</p>
+                <p class="text-lg font-semibold text-slate-900">-42%</p>
+              </div>
+              <div class="rounded-xl bg-slate-50 p-3">
+                <p class="text-[11px] text-slate-500 mb-1">Tickets al día</p>
+                <p class="text-lg font-semibold text-slate-900">+35%</p>
+              </div>
+              <div class="rounded-xl bg-slate-50 p-3">
+                <p class="text-[11px] text-slate-500 mb-1">Errores</p>
+                <p class="text-lg font-semibold text-emerald-600">-28%</p>
+              </div>
+            </div>
+            <p class="text-[11px] text-slate-500 leading-relaxed">
+              Ejemplo orientativo de lo que conseguimos cuando mezclamos diseño de experiencia, IA y buena integración técnica.
             </p>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-4 text-xs text-slate-300">
-            <div class="border border-slate-800 rounded-xl p-3">
-              <p>Procesos internos llenos de tareas repetitivas y manuales.</p>
-            </div>
-            <div class="border border-slate-800 rounded-xl p-3">
-              <p>Equipos quemados respondiendo siempre las mismas dudas.</p>
-            </div>
-            <div class="border border-slate-800 rounded-xl p-3">
-              <p>Datos desperdigados en herramientas que no hablan entre sí.</p>
-            </div>
-            <div class="border border-slate-800 rounded-xl p-3">
-              <p>Proyectos de IA que se quedan en prototipos y nunca se integran bien.</p>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SERVICIOS -->
-    <section id="servicios" class="max-w-6xl mx-auto px-4 py-16">
-      <h2 class="text-2xl font-semibold mb-6">Qué hacemos en Gembres</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60">
-          <h3 class="text-sm font-semibold mb-2">Automatización con IA</h3>
-          <p class="text-xs text-slate-300 mb-3">
-            Diseñamos workflows inteligentes para que tu equipo deje de hacer trabajo mecánico:
-            clasificación de tickets, generación de respuestas, resúmenes de documentos, extracción de datos y más.
-          </p>
+    <section id="servicios" class="border-t border-slate-200 bg-white">
+      <div class="max-w-5xl mx-auto px-4 py-16">
+        <div class="flex items-end justify-between gap-4 mb-8">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight mb-2">En qué te puede ayudar Gembres</h2>
+            <p class="text-sm text-slate-600 max-w-md">
+              Nos centramos en pocas cosas, pero las hacemos muy bien: integrar IA allí donde aporta impacto real.
+            </p>
+          </div>
         </div>
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60">
-          <h3 class="text-sm font-semibold mb-2">LLMs en tu producto</h3>
-          <p class="text-xs text-slate-300 mb-3">
-            Integramos LLMs (OpenAI, Anthropic, modelos open-source…) en tu producto:
-            asistentes dentro de tu app, búsqueda semántica, RAG sobre tu documentación, etc.
-          </p>
-        </div>
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60">
-          <h3 class="text-sm font-semibold mb-2">Arquitectura y consultoría IA</h3>
-          <p class="text-xs text-slate-300 mb-3">
-            Si ya tienes equipo técnico, nos sumamos como partner: arquitectura, elección de modelos,
-            costes, seguridad y evaluación de calidad.
-          </p>
+
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <p class="text-[11px] uppercase tracking-wide text-slate-400 mb-2">01 · Automatización</p>
+            <h3 class="font-medium mb-2">Workflows con IA</h3>
+            <p class="text-sm text-slate-600">
+              Diseñamos flujos que eliminan tareas repetitivas: clasificación de tickets, generación de respuestas,
+              resúmenes de documentos o extracción de datos clave.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <p class="text-[11px] uppercase tracking-wide text-slate-400 mb-2">02 · Producto</p>
+            <h3 class="font-medium mb-2">IA dentro de tu app</h3>
+            <p class="text-sm text-slate-600">
+              Asistentes dentro de tu producto, búsqueda semántica, RAG sobre tu documentación
+              y experiencias de usuario que aprovechan tus propios datos.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <p class="text-[11px] uppercase tracking-wide text-slate-400 mb-2">03 · Arquitectura</p>
+            <h3 class="font-medium mb-2">Partner técnico de IA</h3>
+            <p class="text-sm text-slate-600">
+              Acompañamos a tu equipo: arquitectura de IA, elección de modelos, costes, calidad,
+              seguridad y buenas prácticas de despliegue.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- PROCESO -->
-    <section id="proceso" class="border-t border-slate-800 bg-slate-950/60">
-      <div class="max-w-6xl mx-auto px-4 py-16">
-        <h2 class="text-2xl font-semibold mb-6">De idea a producción, en pasos claros</h2>
-        <div class="grid md:grid-cols-4 gap-4 text-xs text-slate-300">
-          <div class="border border-slate-800 rounded-2xl p-4">
-            <div class="text-emerald-400 font-mono text-[11px] mb-1">01</div>
-            <h3 class="font-semibold mb-1">Diagnóstico</h3>
-            <p>Entendemos tu negocio, tus sistemas y qué problema merece la pena atacar primero.</p>
-          </div>
-          <div class="border border-slate-800 rounded-2xl p-4">
-            <div class="text-emerald-400 font-mono text-[11px] mb-1">02</div>
-            <h3 class="font-semibold mb-1">Prototipo</h3>
-            <p>Construimos un prototipo funcional con datos reales para validar utilidad y costes.</p>
-          </div>
-          <div class="border border-slate-800 rounded-2xl p-4">
-            <div class="text-emerald-400 font-mono text-[11px] mb-1">03</div>
-            <h3 class="font-semibold mb-1">Integración</h3>
-            <p>Conectamos la solución con tus APIs, BBDD y herramientas, pensando en seguridad y escalabilidad.</p>
-          </div>
-          <div class="border border-slate-800 rounded-2xl p-4">
-            <div class="text-emerald-400 font-mono text-[11px] mb-1">04</div>
-            <h3 class="font-semibold mb-1">Medición</h3>
-            <p>Definimos métricas claras y ajustamos hasta que el impacto sea evidente.</p>
-          </div>
+    <section id="proceso" class="border-t border-slate-200 bg-slate-50">
+      <div class="max-w-5xl mx-auto px-4 py-16">
+        <div class="flex items-center justify-between gap-4 mb-6">
+          <h2 class="text-2xl font-semibold tracking-tight">Cómo trabajamos</h2>
+          <p class="text-xs text-slate-500 max-w-xs">
+            Un proceso ligero, pensado para validar rápido y llegar a producción sin dramas.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <!-- CASOS / EJEMPLOS -->
-    <section id="casos" class="max-w-6xl mx-auto px-4 py-16">
-      <h2 class="text-2xl font-semibold mb-6">Ejemplos de soluciones que hacemos</h2>
-      <div class="grid md:grid-cols-3 gap-6 text-xs text-slate-300">
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60">
-          <h3 class="font-semibold mb-1">Asistente interno sobre tu documentación</h3>
-          <p>
-            Un chat interno que responde dudas de tu equipo usando tus manuales, contratos y procedimientos,
-            con control de acceso por roles.
-          </p>
-        </div>
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60">
-          <h3 class="font-semibold mb-1">Soporte al cliente semi-automatizado</h3>
-          <p>
-            Respuestas generadas por IA que tu equipo solo revisa y aprueba, reduciendo el tiempo por ticket sin perder calidad.
-          </p>
-        </div>
-        <div class="border border-slate-800 rounded-2xl p-5 bg-slate-900/60">
-          <h3 class="font-semibold mb-1">Panel de insights de negocio</h3>
-          <p>
-            Procesamos datos de tus herramientas y generamos informes accionables en lenguaje natural.
-          </p>
+        <div class="grid md:grid-cols-4 gap-4 text-sm">
+          <div class="rounded-2xl bg-white border border-slate-200 p-4">
+            <p class="text-[11px] text-slate-400 mb-1">Paso 1</p>
+            <h3 class="font-medium mb-1">Entender el contexto</h3>
+            <p class="text-xs text-slate-600">
+              Llamada corta para entender negocio, sistemas y qué problema merece ser el primero.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white border border-slate-200 p-4">
+            <p class="text-[11px] text-slate-400 mb-1">Paso 2</p>
+            <h3 class="font-medium mb-1">Prototipo funcional</h3>
+            <p class="text-xs text-slate-600">
+              Definimos un caso de uso concreto y construimos una primera versión utilizable.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white border border-slate-200 p-4">
+            <p class="text-[11px] text-slate-400 mb-1">Paso 3</p>
+            <h3 class="font-medium mb-1">Integración real</h3>
+            <p class="text-xs text-slate-600">
+              Conectamos con tus APIs, datos y sistemas actuales para que deje de ser una demo.
+            </p>
+          </div>
+          <div class="rounded-2xl bg-white border border-slate-200 p-4">
+            <p class="text-[11px] text-slate-400 mb-1">Paso 4</p>
+            <h3 class="font-medium mb-1">Métricas y ajustes</h3>
+            <p class="text-xs text-slate-600">
+              Medimos impacto (tiempo, calidad, errores) y ajustamos hasta que tenga sentido mantenerlo.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SOBRE GEMBRES -->
-    <section id="sobre" class="border-t border-slate-800 bg-slate-950/60">
-      <div class="max-w-6xl mx-auto px-4 py-16">
-        <h2 class="text-2xl font-semibold mb-4">¿Quién está detrás de Gembres?</h2>
-        <p class="text-sm text-slate-300 mb-3 max-w-3xl">
-          Gembres nace de la experiencia de años construyendo producto digital, APIs y sistemas backend en producción.
-          No somos una agencia de “presentaciones bonitas”: venimos del mundo de ingeniería, despliegues y métricas.
-        </p>
-        <p class="text-sm text-slate-300 max-w-3xl">
-          Por eso nos obsesiona que lo que construimos con IA se pueda mantener, monitorizar y escalar: buenas prácticas,
-          test, observabilidad y foco en impacto real en el negocio.
-        </p>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="max-w-6xl mx-auto px-4 py-16">
-      <h2 class="text-2xl font-semibold mb-6">Preguntas frecuentes</h2>
-      <div class="space-y-4 text-sm text-slate-300">
-        <details class="border border-slate-800 rounded-xl p-3">
-          <summary class="cursor-pointer font-medium text-slate-100">¿Con qué tecnologías trabajáis?</summary>
-          <p class="mt-2 text-xs">
-            Trabajamos con los principales proveedores de LLMs (OpenAI, Anthropic, modelos open-source)
-            y stack moderno de backend (Node.js/TypeScript, Python, SQL/NoSQL, colas, etc.).
-          </p>
-        </details>
-        <details class="border border-slate-800 rounded-xl p-3">
-          <summary class="cursor-pointer font-medium text-slate-100">¿Cuánto tarda un proyecto típico?</summary>
-          <p class="mt-2 text-xs">
-            Depende del alcance, pero solemos trabajar en ciclos de 2–4 semanas para pasar de idea a prototipo funcional
-            y otras 2–4 semanas para llegar a producción.
-          </p>
-        </details>
-        <details class="border border-slate-800 rounded-xl p-3">
-          <summary class="cursor-pointer font-medium text-slate-100">¿Cuánto cuesta?</summary>
-          <p class="mt-2 text-xs">
-            Hacemos proyectos cerrados y también acompañamiento mensual. Empezamos por una llamada para entender tu caso
-            y darte un rango realista.
-          </p>
-        </details>
-        <details class="border border-slate-800 rounded-xl p-3">
-          <summary class="cursor-pointer font-medium text-slate-100">¿Podéis trabajar con mi equipo técnico?</summary>
-          <p class="mt-2 text-xs">
-            Sí. Nos integramos con tu equipo de ingeniería y producto para acelerar la entrega sin romper nada.
-          </p>
-        </details>
+    <section id="sobre" class="border-t border-slate-200 bg-white">
+      <div class="max-w-5xl mx-auto px-4 py-16">
+        <div class="grid md:grid-cols-[1.1fr,1.2fr] gap-10 items-start">
+          <div>
+            <h2 class="text-2xl font-semibold tracking-tight mb-3">Detrás de Gembres</h2>
+            <p class="text-sm text-slate-600 mb-3">
+              Gembres nace desde la ingeniería: años construyendo backends, APIs y productos en producción.
+            </p>
+            <p class="text-sm text-slate-600 mb-3">
+              Hablamos el mismo idioma que tu equipo técnico y compartimos objetivo con negocio:
+              que la IA no se quede en una presentación bonita, sino en algo que se usa cada día.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 space-y-2">
+            <p>· Experiencia en diseño y construcción de APIs y servicios backend.</p>
+            <p>· Integración con herramientas que ya usas: CRMs, help desks, bases de datos, colas…</p>
+            <p>· Trabajo con los principales proveedores de LLMs y modelos open-source.</p>
+            <p>· Obsesión por la calidad: tests, observabilidad y control de costes.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- CONTACTO / CTA FINAL -->
-    <section id="contacto" class="border-t border-slate-800 bg-slate-950">
-      <div class="max-w-6xl mx-auto px-4 py-16">
-        <div class="max-w-xl">
-          <h2 class="text-2xl font-semibold mb-3">Hablemos de lo que podríamos automatizar en tu negocio</h2>
-          <p class="text-sm text-slate-300 mb-6">
-            Cuéntanos en qué punto estás y te proponemos los 1–2 proyectos de IA con más impacto para tu caso.
+    <section id="contacto" class="border-t border-slate-200 bg-slate-50">
+      <div class="max-w-5xl mx-auto px-4 py-16">
+        <div class="max-w-xl mb-8">
+          <h2 class="text-2xl font-semibold tracking-tight mb-3">¿Ves claro un caso de IA en tu negocio?</h2>
+          <p class="text-sm text-slate-600">
+            Cuéntanos en dos o tres frases qué hacéis y qué os gustaría automatizar o potenciar con IA.
+            Te responderemos con un posible enfoque o te diremos si no somos el partner adecuado.
           </p>
         </div>
-        <div class="grid md:grid-cols-[2fr,1.2fr] gap-10 items-start">
+
+        <div class="grid md:grid-cols-[1.4fr,1fr] gap-10 items-start">
           <form class="space-y-4 text-sm">
             <div>
-              <label class="block mb-1 text-slate-200">Nombre</label>
-              <input type="text" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-slate-50 text-sm" placeholder="Tu nombre" />
+              <label class="block mb-1 text-xs font-medium text-slate-700">Nombre</label>
+              <input
+                type="text"
+                class="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-900"
+                placeholder="Tu nombre"
+              />
             </div>
             <div>
-              <label class="block mb-1 text-slate-200">Email</label>
-              <input type="email" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-slate-50 text-sm" placeholder="tu@empresa.com" />
+              <label class="block mb-1 text-xs font-medium text-slate-700">Email</label>
+              <input
+                type="email"
+                class="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-900"
+                placeholder="tu@empresa.com"
+              />
             </div>
             <div>
-              <label class="block mb-1 text-slate-200">Cuéntanos brevemente tu caso</label>
-              <textarea class="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-slate-50 text-sm h-28" placeholder="Qué hacéis, qué os gustaría automatizar, plazos aproximados..."></textarea>
+              <label class="block mb-1 text-xs font-medium text-slate-700">Cuéntanos brevemente tu caso</label>
+              <textarea
+                class="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-slate-900 h-28"
+                placeholder="Qué hacéis, qué parte os gustaría mejorar con IA, plazos aproximados..."
+              ></textarea>
             </div>
-            <button type="submit" class="inline-flex px-5 py-3 rounded-full bg-emerald-500 text-slate-900 font-medium text-sm hover:bg-emerald-400">
+            <button
+              type="submit"
+              class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-slate-900 text-slate-50 text-sm font-medium hover:bg-slate-800"
+            >
               Enviar mensaje
             </button>
             <p class="text-[11px] text-slate-500">
-              O si lo prefieres, enlaza este botón a tu Calendly/agenda para que reserven directamente.
+              También puedes cambiar este formulario por un enlace directo a tu Calendly o similar.
             </p>
           </form>
-          <div class="text-xs text-slate-300 border border-slate-800 rounded-2xl p-5 bg-slate-900/60">
-            <h3 class="font-semibold mb-2">Qué pasa después de contactar</h3>
-            <ol class="list-decimal list-inside space-y-1 mb-3">
-              <li>Revisamos tu mensaje y valoramos si podemos ayudarte.</li>
-              <li>Si vemos encaje, agendamos una llamada de 30–45 minutos.</li>
-              <li>Te proponemos un plan y un rango de inversión.</li>
-            </ol>
+
+          <div class="text-xs text-slate-600 space-y-3">
+            <div class="rounded-2xl border border-slate-200 bg-white p-4">
+              <h3 class="text-sm font-medium mb-1">Qué pasa después</h3>
+              <p>· Revisamos tu caso.</p>
+              <p>· Si vemos encaje, te proponemos una llamada corta.</p>
+              <p>· Te damos un enfoque posible y un rango de inversión.</p>
+            </div>
             <p class="text-[11px] text-slate-500">
-              Si no vemos encaje claro, te lo diremos. Preferimos relaciones largas a decir que sí a todo.
+              Si no vemos que podamos aportar valor, también te lo diremos. Preferimos tener pocos proyectos pero muy alineados.
             </p>
           </div>
         </div>
@@ -304,10 +273,11 @@
     </section>
   </main>
 
-  <footer class="border-t border-slate-800 bg-slate-950">
-    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
-      <span>© <span id="year"></span> Gembres. Todos los derechos reservados.</span>
-      <span>IA aplicada, sin humo.</span>
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-slate-500">
+      <span>© <span id="year"></span> Gembres.</span>
+      <span>IA aplicada, con foco en producto.</span>
     </div>
   </footer>
 
